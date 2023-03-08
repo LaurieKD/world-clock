@@ -21,6 +21,17 @@ function updateTime() {
 		sydneyDateElement.innerHTML = moment().tz(`${sydneyTimeZone}`).format("MMMM Do, YYYY");
 		sydneyTimeElement.innerHTML = moment().tz(`${sydneyTimeZone}`).format("HH:mm:ss");
 		sydneyAmPmElement.innerHTML = moment().tz(`${sydneyTimeZone}`).format("A");
+
+		// Rome
+		let romeElement = document.querySelector("#rome");
+		let romeDateElement = romeElement.querySelector(".date");
+		let romeTimeElement = romeElement.querySelector(".time-element");
+		let romeAmPmElement = romeElement.querySelector(".am-pm");
+		let romeTimeZone = "Europe/Rome";
+
+		romeDateElement.innerHTML = moment().tz(`${romeTimeZone}`).format("MMMM Do, YYYY");
+		romeTimeElement.innerHTML = moment().tz(`${romeTimeZone}`).format("HH:mm:ss");
+		romeAmPmElement.innerHTML = moment().tz(`${romeTimeZone}`).format("A");
 	}
 }
 

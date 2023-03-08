@@ -13,6 +13,13 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data-1970-2030.min.js"></script>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
 		<link
 			rel="stylesheet"
 			href="src/style.css"
@@ -20,33 +27,45 @@
 		<title>World Clock - Laurie Kranendonk</title>
 	</head>
 	<body>
-		<div class="box">
-			<h1>World Clock</h1>
+		<div>
+			<div class="box">
+				<h1>World Clock</h1>
 
-			<select>
-				<option value="">Choose a city</option>
-				<option value="amsterdam">Amsterdam</option>
-				<option value="buenos-aires">Buenos Aires</option>
-				<option value="bangkok">Bangkok</option>
-				<option value="jerusalem">Jerusalem</option>
-			</select>
-			<div class="city">
-				<h2>Los Angeles</h2>
+				<select
+					class="select-city form-select form-select-lg mb-3"
+					aria-label="Default select example"
+				>
+					<option value="">Choose a city</option>
+					<option value="amsterdam">Amsterdam</option>
+					<option value="buenos-aires">Buenos Aires</option>
+					<option value="bangkok">Bangkok</option>
+					<option value="jerusalem">Jerusalem</option>
+				</select>
+
+				<div class="row justify-content-between">
+					<div class="city col-7">
+						<h2>Los Angeles 🇺🇸</h2>
+						<div class="date">March</div>
+					</div>
+					<div class="time col-5">1:34:04<small> AM</small></div>
+				</div>
+
+				<div class="row justify-content-between">
+					<div class="city col-7">
+						<h2>Sydney 🇦🇺</h2>
+						<div class="date">March</div>
+					</div>
+					<div class="time col-5">1:34:04<small> AM</small></div>
+				</div>
 			</div>
-			<div class="date">March</div>
-			<div class="time">1:34:04</div>
-			<div class="city">
-				<h2>Sydney</h2>
-			</div>
-			<div class="date">March</div>
-			<div class="time">1:34:04</div>
 		</div>
 		<footer>
-			This project was coded by Laurie Kranendonk and
+			This project was coded with ❤️ by <strong>Laurie Kranendonk</strong>, <br />
+			it's
 			<a
 				href="https://github.com/LaurieKD/world-clock"
 				target="_blank"
-				>open sourced on GitHub</a
+				>open sourced on GitHub.</a
 			>
 		</footer>
 		<script src="src/script.js"></script>

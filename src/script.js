@@ -5,20 +5,22 @@ function updateTime() {
 		let losAngelesDateElement = losAngelesElement.querySelector(".date");
 		let losAngelesTimeElement = losAngelesElement.querySelector(".time-element");
 		let losAngelesAmPmElement = losAngelesElement.querySelector(".am-pm");
+		let losAngelesTimeZone = "America/Los_Angeles";
 
-		losAngelesDateElement.innerHTML = moment().format("MMMM Do, YYYY");
-		losAngelesTimeElement.innerHTML = moment().tz("America/Los_Angeles").format("HH:mm:ss");
-		losAngelesAmPmElement.innerHTML = moment().tz("America/Los_Angeles").format("A");
+		losAngelesDateElement.innerHTML = moment().tz(`${losAngelesTimeZone}`).format("MMMM Do, YYYY");
+		losAngelesTimeElement.innerHTML = moment().tz(`${losAngelesTimeZone}`).format("HH:mm:ss");
+		losAngelesAmPmElement.innerHTML = moment().tz(`${losAngelesTimeZone}`).format("A");
 
 		// Sydney
 		let sydneyElement = document.querySelector("#sydney");
 		let sydneyDateElement = sydneyElement.querySelector(".date");
 		let sydneyTimeElement = sydneyElement.querySelector(".time-element");
 		let sydneyAmPmElement = sydneyElement.querySelector(".am-pm");
+		let sydneyTimeZone = "Australia/Sydney";
 
-		sydneyDateElement.innerHTML = moment().format("MMMM Do, YYYY");
-		sydneyTimeElement.innerHTML = moment().tz("Australia/Sydney").format("HH:mm:ss");
-		sydneyAmPmElement.innerHTML = moment().tz("Australia/Sydney").format("A");
+		sydneyDateElement.innerHTML = moment().tz(`${sydneyTimeZone}`).format("MMMM Do, YYYY");
+		sydneyTimeElement.innerHTML = moment().tz(`${sydneyTimeZone}`).format("HH:mm:ss");
+		sydneyAmPmElement.innerHTML = moment().tz(`${sydneyTimeZone}`).format("A");
 	}
 }
 

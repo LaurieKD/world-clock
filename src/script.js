@@ -51,6 +51,8 @@ function updateCity(event) {
 							<span class="time-element">${cityTime}</span><small> <span class="am-pm">${cityAmPmElement}</span></small>
 						</div>
 					</div>
+          </br>
+          <center><a href="/">Back to homepage</a></center>
   
   `;
 	}
